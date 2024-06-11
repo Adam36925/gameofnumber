@@ -11,5 +11,8 @@ int main(int argc, char *argv[]) {
    tajneCislo = rand() % 5 + 1; // Náhodné číslo od 1 do 5
    cout << "Zadej svuj tip na tajne cislo: ";
    cin >> hracovoCislo;
+   if (tajneCislo == hracovoCislo){
+      cout << "Spravne" << endl;
+   }else cout << "Spatne" << tajneCislo << endl;
    return 0;
 }
